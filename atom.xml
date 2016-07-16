@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duolaa.xyz/"/>
-  <updated>2016-01-19T03:19:26.396Z</updated>
+  <updated>2016-07-16T09:04:39.263Z</updated>
   <id>http://duolaa.xyz/</id>
   
   <author>
@@ -16,15 +16,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>二次加密的思考</title>
+    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
+    <published>2016-07-16T07:41:37.502Z</published>
+    <updated>2016-07-16T09:04:39.263Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>ubuntu搭建vnc服务</title>
     <link href="http://duolaa.xyz/2016/07/16/ubuntu%E6%90%AD%E5%BB%BAvnc%E6%9C%8D%E5%8A%A1/"/>
     <id>http://duolaa.xyz/2016/07/16/ubuntu搭建vnc服务/</id>
     <published>2016-07-16T07:41:37.502Z</published>
-    <updated>2016-01-19T03:19:26.396Z</updated>
+    <updated>2016-07-16T09:06:58.424Z</updated>
     
     <content type="html">&lt;h3 id=&quot;本文实践环境信息&quot;&gt;&lt;a href=&quot;#本文实践环境信息&quot; class=&quot;headerlink&quot; title=&quot;本文实践环境信息&quot;&gt;&lt;/a&gt;本文实践环境信息&lt;/h3&gt;&lt;p&gt;服务器Ubuntu相关信息：&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/amICGLu.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;安装vncserver服务&quot;&gt;&lt;a href=&quot;#安装vncserver服务&quot; class=&quot;headerlink&quot; title=&quot;安装vncserver服务&quot;&gt;&lt;/a&gt;安装vncserver服务&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo apt-get install vnc4server
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/gjOIQRz.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h3 id=&quot;开启vnc服务&quot;&gt;&lt;a href=&quot;#开启vnc服务&quot; class=&quot;headerlink&quot; title=&quot;开启vnc服务&quot;&gt;&lt;/a&gt;开启vnc服务&lt;/h3&gt;&lt;p&gt;安装成功后，开启vnc服务。如果想访问root用户的桌面环境就用sudo vncserver，如果访问当前普通用户的环境就直接vncserver即可，首次启动会要求设置密码，用来在客户端访问时使用，后面可以使用vncpasswd 修改。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/2BPjWBH.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;启动vnc成功后，会在主目录下产生一个.vnc目录。&lt;/p&gt;
 &lt;h3 id=&quot;关闭服务&quot;&gt;&lt;a href=&quot;#关闭服务&quot; class=&quot;headerlink&quot; title=&quot;关闭服务&quot;&gt;&lt;/a&gt;关闭服务&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;vncserver -kill  :1
@@ -45,7 +68,9 @@ Killing Xvnc4 process ID 5335
     
     <summary type="html">
     
-      &lt;h3 id=&quot;本文实践环境信息&quot;&gt;&lt;a href=&quot;#本文实践环境信息&quot; class=&quot;headerlink&quot; title=&quot;本文实践环境信息&quot;&gt;&lt;/a&gt;本文实践环境信息&lt;/h3&gt;&lt;p&gt;服务器Ubuntu相关信息：&lt;br&gt;&lt;img src=&quot;http://i.imgur.com
+      &lt;h3 id=&quot;本文实践环境信息&quot;&gt;&lt;a href=&quot;#本文实践环境信息&quot; class=&quot;headerlink&quot; title=&quot;本文实践环境信息&quot;&gt;&lt;/a&gt;本文实践环境信息&lt;/h3&gt;&lt;p&gt;服务器Ubuntu相关信息：&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/amICGLu.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装vncserver服务&quot;&gt;&lt;a href=&quot;#安装vncserver服务&quot; class=&quot;headerlink&quot; title=&quot;安装vncserver服务&quot;&gt;&lt;/a&gt;安装vncserver服务&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo apt-get install vnc4server
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/gjOIQRz.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -57,33 +82,14 @@ Killing Xvnc4 process ID 5335
   </entry>
   
   <entry>
-    <title>二次加密的思考</title>
-    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
-    <published>2016-07-16T07:41:37.502Z</published>
-    <updated>2016-01-29T06:19:39.663Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://duolaa.xyz/2016/07/16/hello-world/"/>
     <id>http://duolaa.xyz/2016/07/16/hello-world/</id>
     <published>2016-07-16T07:31:16.967Z</published>
-    <updated>2016-07-16T07:31:16.967Z</updated>
+    <updated>2016-07-16T09:03:04.929Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -96,7 +102,7 @@ Killing Xvnc4 process ID 5335
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -108,11 +114,12 @@ Killing Xvnc4 process ID 5335
     <link href="http://duolaa.xyz/2015/12/16/echarts+php+mysql/"/>
     <id>http://duolaa.xyz/2015/12/16/echarts+php+mysql/</id>
     <published>2015-12-15T16:00:00.000Z</published>
-    <updated>2016-01-19T03:19:51.340Z</updated>
+    <updated>2016-07-16T09:07:23.190Z</updated>
     
     <content type="html">&lt;p&gt;echarts是百度出品的前端图表可视化产品，就在本博文前几天，ECharts 3 测试版发布，焕然一新的面貌。。。。。。。。。。&lt;/p&gt;
 &lt;h2 id=&quot;echarts简介&quot;&gt;&lt;a href=&quot;#echarts简介&quot; class=&quot;headerlink&quot; title=&quot;echarts简介&quot;&gt;&lt;/a&gt;echarts简介&lt;/h2&gt;&lt;p&gt;ECharts：百度出品的一款图形化数据展示的前端代码，是一款开源、功能强大的数据可视化产品，紧跟着大数据时代的步伐，提供商业产品常用图表，底层基于ZRender（一个全新的轻量级canvas类库），创建了坐标系，图例，提示，工具箱等基础组件，并在此上构建出折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图，同时支持任意维度的堆积和多图表混合展现。&lt;br&gt;官网地址：&lt;br&gt;    &lt;a href=&quot;http://echarts.baidu.com/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://echarts.baidu.com/index.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;通过阅读官方文档，在首页实例部分有很多相关图标的例子，真是做前端的利器，目前很多企业都在做威胁感知、威胁态势分析等系统，前端都是用echarts进行展示，其中地图是用的比较多的，如下图所示。最近想展示一些数据，因此对echarts研究了一下，发现官方的实例文档没有动态获取数据的例子，因此有了本篇文章。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/sJqC6op.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;入门创建图表&quot;&gt;&lt;a href=&quot;#入门创建图表&quot; class=&quot;headerlink&quot; title=&quot;入门创建图表&quot;&gt;&lt;/a&gt;入门创建图表&lt;/h2&gt;&lt;p&gt;官方文档中，有5分钟上手写ECharts的第一个图表，采用模块化单文件引入方式进行编写，详看&lt;br&gt; &lt;code&gt;http://echarts.baidu.com/doc/start.html&lt;/code&gt;&lt;br&gt;就这样，我们就创建了一个简易的图表。其他的类似，还请详细阅读官方文档，&lt;/p&gt;
 &lt;h2 id=&quot;动态获取数据&quot;&gt;&lt;a href=&quot;#动态获取数据&quot; class=&quot;headerlink&quot; title=&quot;动态获取数据&quot;&gt;&lt;/a&gt;动态获取数据&lt;/h2&gt;&lt;p&gt;上述的创建图表只是填写的静态数据，动态数据如下：&lt;br&gt;这里以饼图为例子：首先创建mysql数据库查询语句，这里的查询语句简写的， $mydb是new的一个数据库操作类对象，&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;function selectServiceANDSumm($sql)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	global $mydb; //$mydb new db_mysql()类&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	$result = $mydb-&amp;gt;query($sql);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	$newarray = array();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	while($row = mysql_fetch_array($result))&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;		$newarray[]=array(&amp;apos;name&amp;apos; =&amp;gt;$row[&amp;apos;service&amp;apos;] ,&amp;apos;value&amp;apos; =&amp;gt;$row[&amp;apos;summ&amp;apos;] );&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	return json_encode($newarray); //转换成json进行返回&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;这里将数据的拼接成数组，然后返回json格式。然后前端采用ajax的方式获取刚才查询出来的数据：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(document).ready(function()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;     $.ajax(&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            type: &amp;quot;POST&amp;quot;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            url: &amp;quot;getData.php&amp;quot;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            data: &amp;quot;name=OsANDvalue&amp;quot;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            dataType: &amp;quot;json&amp;quot;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            async: false,  //这个同步请求，异步不成功。&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            success: function(data)&amp;#123;&amp;#125;  //成功就处理数据&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;			error: function(jqXHR)&amp;#123;    //失败就弹出错误代码&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            	alert(&amp;quot;error status:&amp;quot; + jqXHR.status);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           &amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -129,7 +136,8 @@ Killing Xvnc4 process ID 5335
     <summary type="html">
     
       &lt;p&gt;echarts是百度出品的前端图表可视化产品，就在本博文前几天，ECharts 3 测试版发布，焕然一新的面貌。。。。。。。。。。&lt;/p&gt;
-&lt;h2 id=&quot;echarts简介&quot;&gt;&lt;a href=&quot;#echarts简介&quot; class=&quot;headerlink&quot; title=&quot;e
+&lt;h2 id=&quot;echarts简介&quot;&gt;&lt;a href=&quot;#echarts简介&quot; class=&quot;headerlink&quot; title=&quot;echarts简介&quot;&gt;&lt;/a&gt;echarts简介&lt;/h2&gt;&lt;p&gt;ECharts：百度出品的一款图形化数据展示的前端代码，是一款开源、功能强大的数据可视化产品，紧跟着大数据时代的步伐，提供商业产品常用图表，底层基于ZRender（一个全新的轻量级canvas类库），创建了坐标系，图例，提示，工具箱等基础组件，并在此上构建出折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图，同时支持任意维度的堆积和多图表混合展现。&lt;br&gt;官网地址：&lt;br&gt;    &lt;a href=&quot;http://echarts.baidu.com/index.html&quot;&gt;http://echarts.baidu.com/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;通过阅读官方文档，在首页实例部分有很多相关图标的例子，真是做前端的利器，目前很多企业都在做威胁感知、威胁态势分析等系统，前端都是用echarts进行展示，其中地图是用的比较多的，如下图所示。最近想展示一些数据，因此对echarts研究了一下，发现官方的实例文档没有动态获取数据的例子，因此有了本篇文章。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/sJqC6op.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -145,7 +153,7 @@ Killing Xvnc4 process ID 5335
     <link href="http://duolaa.xyz/2015/12/06/ssh%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/"/>
     <id>http://duolaa.xyz/2015/12/06/ssh远程登录/</id>
     <published>2015-12-06T02:38:48.000Z</published>
-    <updated>2016-01-19T03:19:40.699Z</updated>
+    <updated>2016-07-16T09:07:40.452Z</updated>
     
     <content type="html">&lt;h3 id=&quot;基本用法&quot;&gt;&lt;a href=&quot;#基本用法&quot; class=&quot;headerlink&quot; title=&quot;基本用法&quot;&gt;&lt;/a&gt;基本用法&lt;/h3&gt;&lt;p&gt;SSH主要用于远程登录。假定你要以用户名user，登录远程主机host，只要一条简单命令就可以了。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ ssh user@host
@@ -153,7 +161,8 @@ Killing Xvnc4 process ID 5335
 &lt;pre&gt;&lt;code&gt;$ ssh host
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;SSH的默认端口是22，也就是说，你的登录请求会送进远程主机的22端口。使用p参数，可以修改这个端口。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ ssh -p 2222 user@host
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面这条命令表示，ssh直接连接远程主机的2222端口。&lt;br&gt;常用命令格式：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;上面这条命令表示，ssh直接连接远程主机的2222端口。&lt;br&gt;常用命令格式：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ssh [-l login_name] [-p port] [user@]hostname
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;口令登录&quot;&gt;&lt;a href=&quot;#口令登录&quot; class=&quot;headerlink&quot; title=&quot;口令登录&quot;&gt;&lt;/a&gt;口令登录&lt;/h3&gt;&lt;p&gt;如果你是第一次登录对方主机，系统会出现下面的提示：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ ssh user@host
@@ -190,7 +199,12 @@ PubkeyAuthentication yes# 启用公钥认证，默认为yes
     <summary type="html">
     
       &lt;h3 id=&quot;基本用法&quot;&gt;&lt;a href=&quot;#基本用法&quot; class=&quot;headerlink&quot; title=&quot;基本用法&quot;&gt;&lt;/a&gt;基本用法&lt;/h3&gt;&lt;p&gt;SSH主要用于远程登录。假定你要以用户名user，登录远程主机host，只要一条简单命令就可以了。&lt;/p&gt;
-&lt;pre&gt;&lt;co
+&lt;pre&gt;&lt;code&gt;$ ssh user@host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果本地用户名与远程用户名一致，登录时可以省略用户名。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ssh host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;SSH的默认端口是22，也就是说，你的登录请求会送进远程主机的22端口。使用p参数，可以修改这个端口。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ssh -p 2222 user@host
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -206,10 +220,11 @@ PubkeyAuthentication yes# 启用公钥认证，默认为yes
     <link href="http://duolaa.xyz/2015/12/01/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
     <id>http://duolaa.xyz/2015/12/01/为什么要写博客/</id>
     <published>2015-11-30T16:00:00.000Z</published>
-    <updated>2016-01-21T10:44:23.828Z</updated>
+    <updated>2016-07-16T09:04:26.570Z</updated>
     
     <content type="html">&lt;p&gt;很早以前就打算写一些博客，来记录一些事情和经历，但是当我在搭建博客系统的时候，又反复的问自己，问什么要花时间来浪费在这毫无意义的事情上呢，于是看到了下面的文章，决定坚持自己的博客之路。&lt;/p&gt;
 &lt;h3 id=&quot;引文&quot;&gt;&lt;a href=&quot;#引文&quot; class=&quot;headerlink&quot; title=&quot;引文&quot;&gt;&lt;/a&gt;引文&lt;/h3&gt;&lt;p&gt;原文地址 &lt;code&gt;http://zhuanlan.zhihu.com/cnfeat/19743861&lt;/code&gt;&lt;br&gt;引用其中的片段：一个选择我知道现在可能说这话有点不合时宜，毕竟博客时代都已经过去了，再号召大家用过就好像时的东西是不是有点逆流而上？我曾经也问过自己这个问题，但是我觉得，博客时代过去跟我们要开博客是没有多大关系的，就好像你的读书时代已经过去你就不再读书一样。判断一件事情值不值得去做有一个方法：在一张白纸的左边写不值得做的原因，然后在右边写值得做的原因，写完一比较，一权衡，自然能够得出结果。大家都成年人了，你会觉得这样思考分析总结的过程才是正确的思考的方法吧？所以，我在这里列出要写（独立）博客的原因，供大家去选择，然后填在你白纸的右边。注意，我不是给你一个建议，而是提供一个选择，这个选择蕴藏着我也不知道的可能。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h3 id=&quot;博客系统的搭建&quot;&gt;&lt;a href=&quot;#博客系统的搭建&quot; class=&quot;headerlink&quot; title=&quot;博客系统的搭建&quot;&gt;&lt;/a&gt;博客系统的搭建&lt;/h3&gt;&lt;p&gt;Git简介&lt;br&gt;    Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。GitHub可以托管各种git库的站点。GitHub Pages免费的静态站点，三个特点：免费托管、自带主题、支持自制页面和Jekyll。&lt;/p&gt;
 &lt;p&gt;为什么使用Github Pages&lt;/p&gt;
 &lt;ol&gt;
@@ -227,7 +242,7 @@ PubkeyAuthentication yes# 启用公钥认证，默认为yes
     <summary type="html">
     
       &lt;p&gt;很早以前就打算写一些博客，来记录一些事情和经历，但是当我在搭建博客系统的时候，又反复的问自己，问什么要花时间来浪费在这毫无意义的事情上呢，于是看到了下面的文章，决定坚持自己的博客之路。&lt;/p&gt;
-&lt;h3 id=&quot;引文&quot;&gt;&lt;a href=&quot;#引文&quot; class=&quot;headerl
+&lt;h3 id=&quot;引文&quot;&gt;&lt;a href=&quot;#引文&quot; class=&quot;headerlink&quot; title=&quot;引文&quot;&gt;&lt;/a&gt;引文&lt;/h3&gt;&lt;p&gt;原文地址 &lt;code&gt;http://zhuanlan.zhihu.com/cnfeat/19743861&lt;/code&gt;&lt;br&gt;引用其中的片段：一个选择我知道现在可能说这话有点不合时宜，毕竟博客时代都已经过去了，再号召大家用过就好像时的东西是不是有点逆流而上？我曾经也问过自己这个问题，但是我觉得，博客时代过去跟我们要开博客是没有多大关系的，就好像你的读书时代已经过去你就不再读书一样。判断一件事情值不值得去做有一个方法：在一张白纸的左边写不值得做的原因，然后在右边写值得做的原因，写完一比较，一权衡，自然能够得出结果。大家都成年人了，你会觉得这样思考分析总结的过程才是正确的思考的方法吧？所以，我在这里列出要写（独立）博客的原因，供大家去选择，然后填在你白纸的右边。注意，我不是给你一个建议，而是提供一个选择，这个选择蕴藏着我也不知道的可能。&lt;/p&gt;
     
     </summary>
     

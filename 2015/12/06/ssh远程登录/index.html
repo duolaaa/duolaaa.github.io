@@ -4,7 +4,8 @@
 <pre><code>$ ssh host
 </code></pre><p>SSH的默认端口是22，也就是说，你的登录请求会送进远程主机的22端口。使用p参数，可以修改这个端口。</p>
 <pre><code>$ ssh -p 2222 user@host
-</code></pre><p>上面这条命令表示，ssh直接连接远程主机的2222端口。<br>常用命令格式：</p>
+</code></pre><a id="more"></a>
+<p>上面这条命令表示，ssh直接连接远程主机的2222端口。<br>常用命令格式：</p>
 <pre><code>ssh [-l login_name] [-p port] [user@]hostname
 </code></pre><h3 id="口令登录"><a href="#口令登录" class="headerlink" title="口令登录"></a>口令登录</h3><p>如果你是第一次登录对方主机，系统会出现下面的提示：</p>
 <pre><code>$ ssh user@host
