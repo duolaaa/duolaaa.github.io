@@ -215,42 +215,4 @@ PubkeyAuthentication yes# 启用公钥认证，默认为yes
     
   </entry>
   
-  <entry>
-    <title>为什么要写博客</title>
-    <link href="http://duolaa.xyz/2015/12/01/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://duolaa.xyz/2015/12/01/为什么要写博客/</id>
-    <published>2015-11-30T16:00:00.000Z</published>
-    <updated>2016-07-16T09:04:26.570Z</updated>
-    
-    <content type="html">&lt;p&gt;很早以前就打算写一些博客，来记录一些事情和经历，但是当我在搭建博客系统的时候，又反复的问自己，问什么要花时间来浪费在这毫无意义的事情上呢，于是看到了下面的文章，决定坚持自己的博客之路。&lt;/p&gt;
-&lt;h3 id=&quot;引文&quot;&gt;&lt;a href=&quot;#引文&quot; class=&quot;headerlink&quot; title=&quot;引文&quot;&gt;&lt;/a&gt;引文&lt;/h3&gt;&lt;p&gt;原文地址 &lt;code&gt;http://zhuanlan.zhihu.com/cnfeat/19743861&lt;/code&gt;&lt;br&gt;引用其中的片段：一个选择我知道现在可能说这话有点不合时宜，毕竟博客时代都已经过去了，再号召大家用过就好像时的东西是不是有点逆流而上？我曾经也问过自己这个问题，但是我觉得，博客时代过去跟我们要开博客是没有多大关系的，就好像你的读书时代已经过去你就不再读书一样。判断一件事情值不值得去做有一个方法：在一张白纸的左边写不值得做的原因，然后在右边写值得做的原因，写完一比较，一权衡，自然能够得出结果。大家都成年人了，你会觉得这样思考分析总结的过程才是正确的思考的方法吧？所以，我在这里列出要写（独立）博客的原因，供大家去选择，然后填在你白纸的右边。注意，我不是给你一个建议，而是提供一个选择，这个选择蕴藏着我也不知道的可能。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;博客系统的搭建&quot;&gt;&lt;a href=&quot;#博客系统的搭建&quot; class=&quot;headerlink&quot; title=&quot;博客系统的搭建&quot;&gt;&lt;/a&gt;博客系统的搭建&lt;/h3&gt;&lt;p&gt;Git简介&lt;br&gt;    Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。GitHub可以托管各种git库的站点。GitHub Pages免费的静态站点，三个特点：免费托管、自带主题、支持自制页面和Jekyll。&lt;/p&gt;
-&lt;p&gt;为什么使用Github Pages&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;搭建简单而且免费；&lt;/li&gt;
-&lt;li&gt;支持静态脚本；&lt;/li&gt;
-&lt;li&gt;可以绑定你的域名；&lt;/li&gt;
-&lt;li&gt;DIY自由发挥，动手实践一些有意思的东西git,markdown,bootstrap,jekyll&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;github搭建博客系统网上有很多例子，关键字：&lt;code&gt;github pages&lt;/code&gt;就可以搜索到很多优秀的教程。&lt;/p&gt;
-&lt;h3 id=&quot;使用GitHub-Pages来做博客是否道德&quot;&gt;&lt;a href=&quot;#使用GitHub-Pages来做博客是否道德&quot; class=&quot;headerlink&quot; title=&quot;使用GitHub Pages来做博客是否道德&quot;&gt;&lt;/a&gt;使用GitHub Pages来做博客是否道德&lt;/h3&gt;&lt;p&gt;网络上很多人觉得毕竟Page仅仅是用于用户的个人主页或者项目的主页，用来做博客有点投机的感觉。至于道不道德，看知乎上的这篇文章吧 &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;http://www.zhihu.com/question/20717014
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;知而言之，言而总之吧，以后就希望用他跟一些志同道合的朋友交流。&lt;br&gt;                                                              IT届下安全业文艺屌丝青年敬上。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;很早以前就打算写一些博客，来记录一些事情和经历，但是当我在搭建博客系统的时候，又反复的问自己，问什么要花时间来浪费在这毫无意义的事情上呢，于是看到了下面的文章，决定坚持自己的博客之路。&lt;/p&gt;
-&lt;h3 id=&quot;引文&quot;&gt;&lt;a href=&quot;#引文&quot; class=&quot;headerlink&quot; title=&quot;引文&quot;&gt;&lt;/a&gt;引文&lt;/h3&gt;&lt;p&gt;原文地址 &lt;code&gt;http://zhuanlan.zhihu.com/cnfeat/19743861&lt;/code&gt;&lt;br&gt;引用其中的片段：一个选择我知道现在可能说这话有点不合时宜，毕竟博客时代都已经过去了，再号召大家用过就好像时的东西是不是有点逆流而上？我曾经也问过自己这个问题，但是我觉得，博客时代过去跟我们要开博客是没有多大关系的，就好像你的读书时代已经过去你就不再读书一样。判断一件事情值不值得去做有一个方法：在一张白纸的左边写不值得做的原因，然后在右边写值得做的原因，写完一比较，一权衡，自然能够得出结果。大家都成年人了，你会觉得这样思考分析总结的过程才是正确的思考的方法吧？所以，我在这里列出要写（独立）博客的原因，供大家去选择，然后填在你白纸的右边。注意，我不是给你一个建议，而是提供一个选择，这个选择蕴藏着我也不知道的可能。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Essays" scheme="http://duolaa.xyz/categories/Essays/"/>
-    
-    
-      <category term="Experience" scheme="http://duolaa.xyz/tags/Experience/"/>
-    
-  </entry>
-  
 </feed>
