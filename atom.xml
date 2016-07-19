@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duolaa.xyz/"/>
-  <updated>2016-07-16T09:29:09.848Z</updated>
+  <updated>2016-07-19T07:47:34.754Z</updated>
   <id>http://duolaa.xyz/</id>
   
   <author>
@@ -16,19 +16,52 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://duolaa.xyz/2016/07/16/README/"/>
-    <id>http://duolaa.xyz/2016/07/16/README/</id>
-    <published>2016-07-16T09:27:00.901Z</published>
-    <updated>2016-07-16T09:29:09.848Z</updated>
+    <title>Httpoxy漏洞预警</title>
+    <link href="http://duolaa.xyz/2016/07/19/httpoxy/"/>
+    <id>http://duolaa.xyz/2016/07/19/httpoxy/</id>
+    <published>2016-07-18T16:00:00.000Z</published>
+    <updated>2016-07-19T07:47:34.754Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;README&quot;&gt;&lt;a href=&quot;#README&quot; class=&quot;headerlink&quot; title=&quot;README&quot;&gt;&lt;/a&gt;README&lt;/h1&gt;&lt;p&gt;theme by &lt;a href=&quot;https://github.com/ahonn/hexo-theme-even&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;even&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;#PROBLEM&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;em&gt;A CGI application vulnerability for PHP, Go, Python and others&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;漏洞概述&quot;&gt;&lt;a href=&quot;#漏洞概述&quot; class=&quot;headerlink&quot; title=&quot;漏洞概述&quot;&gt;&lt;/a&gt;漏洞概述&lt;/h2&gt;&lt;p&gt;httpoxy漏洞其实就是一个命名冲突的问题，一台使用了httpoxy的服务器，在接受客户端请求之后，服务器会把http变量头转换成大写，并加上HTTP_，如请求头有一个字段是Proxy，之后会变成HTTP_PROXY，其中的value值是不变的。并且在需要的地方转换成了环境变量。这里传进去的变量同名的则被覆盖，&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/duolaaa/markdownimage/blob/master/071901.png?raw=true&quot; alt=&quot;请输入图片描述&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;利用场景&quot;&gt;&lt;a href=&quot;#利用场景&quot; class=&quot;headerlink&quot; title=&quot;利用场景&quot;&gt;&lt;/a&gt;利用场景&lt;/h2&gt;&lt;p&gt;必须CGI(client)模式，必须变量被脚本调用，服务器开放外网&lt;br&gt;这里的利用场景有点局限，并且还要看CGI是怎么写的，控制HTTP_变量进行操作，脑洞大开吧。&lt;br&gt;首先应该是加一个HTTP_PROXY的选项，让流量到代理服务器中转。其次可以修改HTTP HOST选项，将url请求跳转到第三方服务器。 然后的然后。。。&lt;/p&gt;
+&lt;h2 id=&quot;漏洞修复&quot;&gt;&lt;a href=&quot;#漏洞修复&quot; class=&quot;headerlink&quot; title=&quot;漏洞修复&quot;&gt;&lt;/a&gt;漏洞修复&lt;/h2&gt;&lt;p&gt;修复就主要参考：&lt;a href=&quot;https://httpoxy.org/#fix-now&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://httpoxy.org/#fix-now&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;参考链接&quot;&gt;&lt;a href=&quot;#参考链接&quot; class=&quot;headerlink&quot; title=&quot;参考链接&quot;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://httpoxy.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://httpoxy.org/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.symfony.fi/entry/httpoxy-vulnerability-hits-php-installations-using-fastcgi-and-php-fpm-and-hhvm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.symfony.fi/entry/httpoxy-vulnerability-hits-php-installations-using-fastcgi-and-php-fpm-and-hhvm&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://access.redhat.com/security/vulnerabilities/httpoxy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://access.redhat.com/security/vulnerabilities/httpoxy&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://bobao.360.cn/learning/detail/2903.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://bobao.360.cn/learning/detail/2903.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.laruence.com/2016/07/19/3101.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.laruence.com/2016/07/19/3101.html&lt;/a&gt; &lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;README&quot;&gt;&lt;a href=&quot;#README&quot; class=&quot;headerlink&quot; title=&quot;README&quot;&gt;&lt;/a&gt;README&lt;/h1&gt;&lt;p&gt;theme by &lt;a href=&quot;https://github.com/ahonn/hexo-theme-
+      &lt;p&gt;&lt;em&gt;A CGI application vulnerability for PHP, Go, Python and others&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;漏洞概述&quot;&gt;&lt;a href=&quot;#漏洞概述&quot; class=&quot;headerlink&quot; title=&quot;漏洞概述&quot;&gt;&lt;/a&gt;漏洞概述&lt;/h2&gt;&lt;p&gt;httpoxy漏洞其实就是一个命名冲突的问题，一台使用了httpoxy的服务器，在接受客户端请求之后，服务器会把http变量头转换成大写，并加上HTTP_，如请求头有一个字段是Proxy，之后会变成HTTP_PROXY，其中的value值是不变的。并且在需要的地方转换成了环境变量。这里传进去的变量同名的则被覆盖，&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/duolaaa/markdownimage/blob/master/071901.png?raw=true&quot; alt=&quot;请输入图片描述&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="vlu" scheme="http://duolaa.xyz/categories/vlu/"/>
+    
+    
+      <category term="httpoxy" scheme="http://duolaa.xyz/tags/httpoxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二次加密的思考</title>
+    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
+    <published>2016-07-16T07:41:37.502Z</published>
+    <updated>2016-07-16T09:04:39.263Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
     
     </summary>
     
@@ -76,28 +109,6 @@ Killing Xvnc4 process ID 5335
     
     
       <category term="Vnc" scheme="http://duolaa.xyz/tags/Vnc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二次加密的思考</title>
-    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
-    <published>2016-07-16T07:41:37.502Z</published>
-    <updated>2016-07-16T09:04:39.263Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-    
-    </summary>
-    
     
   </entry>
   
