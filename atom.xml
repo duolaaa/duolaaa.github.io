@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duolaa.xyz/"/>
-  <updated>2016-10-12T03:07:19.543Z</updated>
+  <updated>2016-10-12T03:10:50.876Z</updated>
   <id>http://duolaa.xyz/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://duolaa.xyz/2016/10/12/debian%20source.list/"/>
     <id>http://duolaa.xyz/2016/10/12/debian source.list/</id>
     <published>2016-10-12T03:06:39.371Z</published>
-    <updated>2016-10-12T03:07:19.543Z</updated>
+    <updated>2016-10-12T03:10:50.876Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mirrors.163.com/.help/debian.html&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;title: Debian网易镜像使用帮助&lt;br&gt;date: 2015-06-19&lt;br&gt;tags: source.list&lt;br&gt;categories: backup&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i386&lt;/li&gt;
 &lt;li&gt;amd64&lt;/li&gt;
@@ -31,6 +32,7 @@
 &lt;h3 id=&quot;收录版本&quot;&gt;&lt;a href=&quot;#收录版本&quot; class=&quot;headerlink&quot; title=&quot;收录版本&quot;&gt;&lt;/a&gt;收录版本&lt;/h3&gt;&lt;p&gt;所有版本&lt;/p&gt;
 &lt;h3 id=&quot;更新时间&quot;&gt;&lt;a href=&quot;#更新时间&quot; class=&quot;headerlink&quot; title=&quot;更新时间&quot;&gt;&lt;/a&gt;更新时间&lt;/h3&gt;&lt;p&gt;每4小时更新一次&lt;/p&gt;
 &lt;h3 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h3&gt;&lt;p&gt;以Jessie为例, 编辑/etc/apt/sources.list文件, 在文件最前面添加以下条目(操作前请做好相应备份)&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;pre style=&quot;font-family: monospace; font-size: 12.87px; border: 1px solid black; margin: 0px; padding: 10px; width: 800px; line-height: 19.305px; overflow: auto; background-color: rgb(247, 247, 247);&quot;&gt;deb http://mirrors.163.com/debian/ jessie main non-free contrib
 deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
 deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
@@ -58,8 +60,16 @@ deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free con
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mirrors.163.com/.help/debian.html&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id
+      &lt;p&gt;title: Debian网易镜像使用帮助&lt;br&gt;date: 2015-06-19&lt;br&gt;tags: source.list&lt;br&gt;categories: backup&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;i386&lt;/li&gt;
+&lt;li&gt;amd64&lt;/li&gt;
+&lt;li&gt;source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;收录版本&quot;&gt;&lt;a href=&quot;#收录版本&quot; class=&quot;headerlink&quot; title=&quot;收录版本&quot;&gt;&lt;/a&gt;收录版本&lt;/h3&gt;&lt;p&gt;所有版本&lt;/p&gt;
+&lt;h3 id=&quot;更新时间&quot;&gt;&lt;a href=&quot;#更新时间&quot; class=&quot;headerlink&quot; title=&quot;更新时间&quot;&gt;&lt;/a&gt;更新时间&lt;/h3&gt;&lt;p&gt;每4小时更新一次&lt;/p&gt;
+&lt;h3 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h3&gt;&lt;p&gt;以Jessie为例, 编辑/etc/apt/sources.list文件, 在文件最前面添加以下条目(操作前请做好相应备份)&lt;/p&gt;
     
     </summary>
     
