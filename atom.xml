@@ -47,6 +47,28 @@
   </entry>
   
   <entry>
+    <title>二次加密的思考</title>
+    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
+    <published>2016-07-16T07:41:37.502Z</published>
+    <updated>2016-07-16T09:04:39.263Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>ubuntu搭建vnc服务</title>
     <link href="http://duolaa.xyz/2016/07/16/ubuntu%E6%90%AD%E5%BB%BAvnc%E6%9C%8D%E5%8A%A1/"/>
     <id>http://duolaa.xyz/2016/07/16/ubuntu搭建vnc服务/</id>
@@ -87,28 +109,6 @@ Killing Xvnc4 process ID 5335
     
     
       <category term="Vnc" scheme="http://duolaa.xyz/tags/Vnc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二次加密的思考</title>
-    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
-    <published>2016-07-16T07:41:37.502Z</published>
-    <updated>2016-07-16T09:04:39.263Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-    
-    </summary>
-    
     
   </entry>
   
@@ -250,10 +250,11 @@ PubkeyAuthentication yes# 启用公钥认证，默认为yes
     <title>Debian网易镜像使用帮助</title>
     <link href="http://duolaa.xyz/2015/06/19/debian%20source.list/"/>
     <id>http://duolaa.xyz/2015/06/19/debian source.list/</id>
-    <published>2015-06-18T16:00:00.000Z</published>
-    <updated>2016-10-12T03:14:43.050Z</updated>
+    <published>2015-06-19T02:38:48.000Z</published>
+    <updated>2016-10-12T03:17:28.763Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;主要是做个备份，网易的源，参考地址&quot;&gt;&lt;a href=&quot;#主要是做个备份，网易的源，参考地址&quot; class=&quot;headerlink&quot; title=&quot;主要是做个备份，网易的源，参考地址&quot;&gt;&lt;/a&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考地址&lt;/a&gt;&lt;/h2&gt;&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
+    <content type="html">&lt;p&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i386&lt;/li&gt;
 &lt;li&gt;amd64&lt;/li&gt;
 &lt;li&gt;source&lt;/li&gt;
@@ -289,7 +290,8 @@ deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free con
     
     <summary type="html">
     
-      &lt;h2 id=&quot;主要是做个备份，网易的源，参考地址&quot;&gt;&lt;a href=&quot;#主要是做个备份，网易的源，参考地址&quot; class=&quot;headerlink&quot; title=&quot;主要是做个备份，网易的源，参考地址&quot;&gt;&lt;/a&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot;&gt;参考地址&lt;/a&gt;&lt;/h2&gt;&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
+      &lt;p&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i386&lt;/li&gt;
 &lt;li&gt;amd64&lt;/li&gt;
 &lt;li&gt;source&lt;/li&gt;
@@ -300,7 +302,7 @@ deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free con
     
     </summary>
     
-      <category term="backup" scheme="http://duolaa.xyz/categories/backup/"/>
+      <category term="Linux" scheme="http://duolaa.xyz/categories/Linux/"/>
     
     
       <category term="source.list" scheme="http://duolaa.xyz/tags/source-list/"/>
