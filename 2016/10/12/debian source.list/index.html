@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="description"><meta name="viewport" content="width=device-width, initial-scale=1"><title> · Duolaa</title><link rel="short icon" href="/favicon.ico"><!-- font--><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono"><!-- icon--><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><!-- theme style--><link rel="stylesheet" href="/css/style.css"></head><body><div id="main"><header><a href="/." class="logo">Duolaa</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li><li class="nav-link"><a href="/about/" target="_self">About</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title"></h1><span class="post-time">Oct 12, 2016</span><div class="post-content"><p><a href="http://mirrors.163.com/.help/debian.html" target="_blank" rel="external">http://mirrors.163.com/.help/debian.html</a></p>
+<h1 id="Debian镜像使用帮助"><a href="#Debian镜像使用帮助" class="headerlink" title="Debian镜像使用帮助"></a>Debian镜像使用帮助</h1><h3 id="收录架构"><a href="#收录架构" class="headerlink" title="收录架构"></a>收录架构</h3><ul>
+<li>i386</li>
+<li>amd64</li>
+<li>source</li>
+</ul>
+<h3 id="收录版本"><a href="#收录版本" class="headerlink" title="收录版本"></a>收录版本</h3><p>所有版本</p>
+<h3 id="更新时间"><a href="#更新时间" class="headerlink" title="更新时间"></a>更新时间</h3><p>每4小时更新一次</p>
+<h3 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h3><p>以Jessie为例, 编辑/etc/apt/sources.list文件, 在文件最前面添加以下条目(操作前请做好相应备份)</p>
+<pre style="font-family: monospace; font-size: 12.87px; border: 1px solid black; margin: 0px; padding: 10px; width: 800px; line-height: 19.305px; overflow: auto; background-color: rgb(247, 247, 247);">deb http://mirrors.163.com/debian/ jessie main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib</pre>
+
+<p>或者下载相应版本的sources.list, 覆盖/etc/apt/sources.list即可(操作前请做好相应备份)</p>
+<ul>
+<li><a href="http://mirrors.163.com/.help/sources.list.jessie" target="_blank" rel="external">jessie</a></li>
+<li><a href="http://mirrors.163.com/.help/sources.list.wheezy" target="_blank" rel="external">wheezy</a></li>
+<li><a href="http://mirrors.163.com/.help/sources.list.squeeze" target="_blank" rel="external">squeeze</a></li>
+</ul>
+<h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><ul>
+<li>官方主页: <a href="http://www.debian.org/" target="_blank" rel="external">http://www.debian.org/</a></li>
+<li>邮件列表: <a href="http://www.debian.org/support#mail_lists" target="_blank" rel="external">http://www.debian.org/support#mail_lists</a></li>
+<li>Wiki: <a href="http://wiki.debian.org/" target="_blank" rel="external">http://wiki.debian.org/</a></li>
+<li>文档: <a href="http://www.debian.org/doc/" target="_blank" rel="external">http://www.debian.org/doc/</a></li>
+<li>镜像列表: <a href="http://www.debian.org/mirror/list" target="_blank" rel="external">http://www.debian.org/mirror/list</a></li>
+</ul>
+<p>本文档由网易公司收集整理, 希望能对国内开源软件用户有所帮助. 请转载时给出原始链接, 否则我们保留追究法律责任的权利</p>
+</div></article><div class="tags"></div><div class="paginator"><a href="/2016/07/19/httpoxy/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div><section id="comments"><div data-thread-key="http://duolaa.xyz/2016/10/12/debian source.list/index.html" data-title="" data-url="http://duolaa.xyz/2016/10/12/debian source.list/index.html" class="ds-thread"></div><script type="text/javascript">var duoshuoQuery = {short_name: "duolaa" };
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script></section></section><footer><div class="copyright"><p>&copy;2015-2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Dunn</span><span class="heart"><i class="iconfont icon-heart"></i> Theme by </span><a href="https://github.com/ahonn/hexo-theme-even">   Even</a></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div></body><script src="/js/back2top.js"></script></html>

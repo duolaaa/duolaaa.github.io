@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duolaa.xyz/"/>
-  <updated>2016-07-19T07:47:34.754Z</updated>
+  <updated>2016-10-12T03:07:19.543Z</updated>
   <id>http://duolaa.xyz/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://duolaa.xyz/2016/10/12/debian%20source.list/"/>
+    <id>http://duolaa.xyz/2016/10/12/debian source.list/</id>
+    <published>2016-10-12T03:06:39.371Z</published>
+    <updated>2016-10-12T03:07:19.543Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mirrors.163.com/.help/debian.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;i386&lt;/li&gt;
+&lt;li&gt;amd64&lt;/li&gt;
+&lt;li&gt;source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;收录版本&quot;&gt;&lt;a href=&quot;#收录版本&quot; class=&quot;headerlink&quot; title=&quot;收录版本&quot;&gt;&lt;/a&gt;收录版本&lt;/h3&gt;&lt;p&gt;所有版本&lt;/p&gt;
+&lt;h3 id=&quot;更新时间&quot;&gt;&lt;a href=&quot;#更新时间&quot; class=&quot;headerlink&quot; title=&quot;更新时间&quot;&gt;&lt;/a&gt;更新时间&lt;/h3&gt;&lt;p&gt;每4小时更新一次&lt;/p&gt;
+&lt;h3 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h3&gt;&lt;p&gt;以Jessie为例, 编辑/etc/apt/sources.list文件, 在文件最前面添加以下条目(操作前请做好相应备份)&lt;/p&gt;
+&lt;pre style=&quot;font-family: monospace; font-size: 12.87px; border: 1px solid black; margin: 0px; padding: 10px; width: 800px; line-height: 19.305px; overflow: auto; background-color: rgb(247, 247, 247);&quot;&gt;deb http://mirrors.163.com/debian/ jessie main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib&lt;/pre&gt;
+
+&lt;p&gt;或者下载相应版本的sources.list, 覆盖/etc/apt/sources.list即可(操作前请做好相应备份)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://mirrors.163.com/.help/sources.list.jessie&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jessie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mirrors.163.com/.help/sources.list.wheezy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wheezy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mirrors.163.com/.help/sources.list.squeeze&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;squeeze&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;相关链接&quot;&gt;&lt;a href=&quot;#相关链接&quot; class=&quot;headerlink&quot; title=&quot;相关链接&quot;&gt;&lt;/a&gt;相关链接&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;官方主页: &lt;a href=&quot;http://www.debian.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.debian.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;邮件列表: &lt;a href=&quot;http://www.debian.org/support#mail_lists&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.debian.org/support#mail_lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wiki: &lt;a href=&quot;http://wiki.debian.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wiki.debian.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文档: &lt;a href=&quot;http://www.debian.org/doc/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.debian.org/doc/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;镜像列表: &lt;a href=&quot;http://www.debian.org/mirror/list&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.debian.org/mirror/list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文档由网易公司收集整理, 希望能对国内开源软件用户有所帮助. 请转载时给出原始链接, 否则我们保留追究法律责任的权利&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mirrors.163.com/.help/debian.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Httpoxy漏洞预警</title>
