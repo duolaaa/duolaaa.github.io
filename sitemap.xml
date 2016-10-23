@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://duolaa.xyz/2016/10/23/CVE-2016-5195%20Dirty%20Cow/</loc>
+    
+    <lastmod>2016-10-23T12:07:04.051Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://duolaa.xyz/2016/06/19/Debian%20Q&R/</loc>
+    
+    <lastmod>2016-10-21T03:07:39.984Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://duolaa.xyz/2015/06/19/debian%20source.list/</loc>
     
-    <lastmod>2016-10-12T03:20:18.350Z</lastmod>
+    <lastmod>2016-10-21T03:05:38.746Z</lastmod>
     
   </url>
   

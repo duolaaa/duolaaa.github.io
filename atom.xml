@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://duolaa.xyz/"/>
-  <updated>2016-07-19T07:47:34.754Z</updated>
+  <updated>2016-10-23T12:07:04.051Z</updated>
   <id>http://duolaa.xyz/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVE-2016-5195 Dirty Cow</title>
+    <link href="http://duolaa.xyz/2016/10/23/CVE-2016-5195%20Dirty%20Cow/"/>
+    <id>http://duolaa.xyz/2016/10/23/CVE-2016-5195 Dirty Cow/</id>
+    <published>2016-10-23T12:38:48.000Z</published>
+    <updated>2016-10-23T12:07:04.051Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Q：漏洞介绍&quot;&gt;&lt;a href=&quot;#Q：漏洞介绍&quot; class=&quot;headerlink&quot; title=&quot;Q：漏洞介绍&quot;&gt;&lt;/a&gt;Q：漏洞介绍&lt;/h2&gt;&lt;p&gt;漏洞编号：CVE-2016-5195&lt;br&gt;漏洞名称：脏牛（Dirty COW）&lt;br&gt;漏洞详情：Linux内核的内存子系统在处理写时拷贝(Copy-on-Write，缩写为COW)时存在条件竞争漏洞，导致可以破坏私有只读内存映射。一个低权限的本地用户能够利用此漏洞获取其他只读内存映射的写权限，进而可以获取整个系统的最高权限。&lt;/p&gt;
+&lt;h2 id=&quot;Q-漏洞影响范围&quot;&gt;&lt;a href=&quot;#Q-漏洞影响范围&quot; class=&quot;headerlink&quot; title=&quot;Q: 漏洞影响范围&quot;&gt;&lt;/a&gt;Q: 漏洞影响范围&lt;/h2&gt;&lt;p&gt;该漏洞从Linux内核版本&amp;gt;=2.6.22以后就开始存在，影响全版本Linux，直到2016年10月18日才修复。其中Red Hat、Debian和Ubuntu三个发行版的受影响及修复情况见如下链接：&lt;br&gt;Red Hat: &lt;a href=&quot;https://access.redhat.com/security/cve/cve-2016-5195&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://access.redhat.com/security/cve/cve-2016-5195&lt;/a&gt;&lt;br&gt;Debian: &lt;a href=&quot;https://security-tracker.debian.org/tracker/CVE-2016-5195&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://security-tracker.debian.org/tracker/CVE-2016-5195&lt;/a&gt;&lt;br&gt;Ubuntu ：&lt;a href=&quot;http://people.canonical.com/~ubuntu-security/cve/2016/CVE-2016-5195.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://people.canonical.com/~ubuntu-security/cve/2016/CVE-2016-5195.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Android 7.0最新的10月补丁安全级别的系统上测试过漏洞POC，确认Android受影响&lt;/p&gt;
+&lt;p&gt;该漏洞影响所有目前运行 Linux 系统的设备，包括但不限于运行 Linux 系统的服务器、Docker 容器服务、使用 Linux 操作系统的路由器、Android 手机/平板、搭载了 Android 系统的电视机/机顶盒等。&lt;/p&gt;
+&lt;h2 id=&quot;漏洞详情解析&quot;&gt;&lt;a href=&quot;#漏洞详情解析&quot; class=&quot;headerlink&quot; title=&quot;漏洞详情解析&quot;&gt;&lt;/a&gt;漏洞详情解析&lt;/h2&gt;&lt;p&gt;漏洞发现者：Phil Oester （&lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2016-5195）对于该漏洞作者甚至申请了独立的：网站、twitter帐号、github帐号、并找专人设计了Logo。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://access.redhat.com/security/cve/CVE-2016-5195）对于该漏洞作者甚至申请了独立的：网站、twitter帐号、github帐号、并找专人设计了Logo。&lt;/a&gt;&lt;br&gt;在官方网站上可以看到详细的漏洞详情：&lt;a href=&quot;https://dirtycow.ninja/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://dirtycow.ninja/&lt;/a&gt;&lt;br&gt;经过实际测试了一个exp，测试结果如下截图（测试需要谨慎，可能引起您的内核不稳定）：&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/duolaaa/markdownimage/master/dirty%20cow.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;防御方法&quot;&gt;&lt;a href=&quot;#防御方法&quot; class=&quot;headerlink&quot; title=&quot;防御方法&quot;&gt;&lt;/a&gt;防御方法&lt;/h2&gt;&lt;p&gt;修复方法一：&lt;br&gt;根据官方建议进行升级或按要求采取规避措施，用户也可以根据以下链接，重新编译Linux来修复该漏洞：&lt;br&gt;&lt;a href=&quot;https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=19be0eaffa3ac7d8eb6784ad9bdbc7d67ed8e619&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=19be0eaffa3ac7d8eb6784ad9bdbc7d67ed8e619&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;修复方法二：&lt;br&gt;&lt;a href=&quot;http://www.cyberciti.biz/faq/dirtycow-linux-cve-2016-5195-kernel-local-privilege-escalation-vulnerability-fix/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cyberciti.biz/faq/dirtycow-linux-cve-2016-5195-kernel-local-privilege-escalation-vulnerability-fix/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;修复方法三：&lt;br&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIwNDA2NDk5OQ==&amp;amp;mid=2651370571&amp;amp;idx=1&amp;amp;sn=68acf07ca2683a9c98fa52e900d97db3&amp;amp;chksm=8d39c5c3ba4e4cd58c21d0a21ca337ded2132625987e174d286f8d175034267bd09807ea9a11&amp;amp;scene=0&amp;amp;key=c3acc508db7203760994333cde1c1e7c14c7cefe2d8b9bc91bee787f0493fdc80cf50ebf5ccc7dffaf43dfe41a612a0a&amp;amp;ascene=0&amp;amp;uin=NjA3NzIzMjM0&amp;amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&amp;amp;version=11020012&amp;amp;pass_ticket=07mgUdvdU3ue4iD45DCbfJKAjLwrXIGzs085Z1m1HylfUBQsqy%2BidNwT0VZMccln&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://mp.weixin.qq.com/s?__biz=MzIwNDA2NDk5OQ==&amp;amp;mid=2651370571&amp;amp;idx=1&amp;amp;sn=68acf07ca2683a9c98fa52e900d97db3&amp;amp;chksm=8d39c5c3ba4e4cd58c21d0a21ca337ded2132625987e174d286f8d175034267bd09807ea9a11&amp;amp;scene=0&amp;amp;key=c3acc508db7203760994333cde1c1e7c14c7cefe2d8b9bc91bee787f0493fdc80cf50ebf5ccc7dffaf43dfe41a612a0a&amp;amp;ascene=0&amp;amp;uin=NjA3NzIzMjM0&amp;amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.5+build(15F34)&amp;amp;version=11020012&amp;amp;pass_ticket=07mgUdvdU3ue4iD45DCbfJKAjLwrXIGzs085Z1m1HylfUBQsqy%2BidNwT0VZMccln&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;漏洞详情参考网址&quot;&gt;&lt;a href=&quot;#漏洞详情参考网址&quot; class=&quot;headerlink&quot; title=&quot;漏洞详情参考网址&quot;&gt;&lt;/a&gt;漏洞详情参考网址&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://dirtycow.ninja/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://dirtycow.ninja/&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Q：漏洞介绍&quot;&gt;&lt;a href=&quot;#Q：漏洞介绍&quot; class=&quot;headerlink&quot; title=&quot;Q：漏洞介绍&quot;&gt;&lt;/a&gt;Q：漏洞介绍&lt;/h2&gt;&lt;p&gt;漏洞编号：CVE-2016-5195&lt;br&gt;漏洞名称：脏牛（Dirty COW）&lt;br&gt;漏洞详情：Linux
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://duolaa.xyz/categories/Linux/"/>
+    
+    
+      <category term="CVE" scheme="http://duolaa.xyz/tags/CVE/"/>
+    
+  </entry>
   
   <entry>
     <title>Httpoxy漏洞预警</title>
@@ -43,6 +74,28 @@
     
     
       <category term="httpoxy" scheme="http://duolaa.xyz/tags/httpoxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二次加密的思考</title>
+    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
+    <published>2016-07-16T07:41:37.502Z</published>
+    <updated>2016-07-16T09:04:39.263Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
+&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
+    
+    </summary>
+    
     
   </entry>
   
@@ -91,28 +144,6 @@ Killing Xvnc4 process ID 5335
   </entry>
   
   <entry>
-    <title>二次加密的思考</title>
-    <link href="http://duolaa.xyz/2016/07/16/%E4%BA%8C%E6%AC%A1%E5%8A%A0%E5%AF%86%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://duolaa.xyz/2016/07/16/二次加密的思考/</id>
-    <published>2016-07-16T07:41:37.502Z</published>
-    <updated>2016-07-16T09:04:39.263Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;抛出问题&quot;&gt;&lt;a href=&quot;#抛出问题&quot; class=&quot;headerlink&quot; title=&quot;抛出问题&quot;&gt;&lt;/a&gt;抛出问题&lt;/h2&gt;&lt;p&gt;比如我有一个FTP，里面有视频文件，这个视频不是每个人都可以下载，只有授权用户才可以，因此我给每个用户分配了一个账号密码，登录ftp之后，就可以下载相对应的视频资源，但是为了防止ftp账号密码泄露或者被暴力破解甚至撞库，想采用二次加密方式，对下载的东西采用压缩加密（比如 RAR密码加密压缩）。那么问题来了，密码如何告知用户。&lt;/p&gt;
-&lt;h2 id=&quot;寻求答案&quot;&gt;&lt;a href=&quot;#寻求答案&quot; class=&quot;headerlink&quot; title=&quot;寻求答案&quot;&gt;&lt;/a&gt;寻求答案&lt;/h2&gt;&lt;p&gt;对上述问题，只有一下的要求&lt;br&gt;    1、用户量较大&lt;br&gt;    2、视频资源文件更新频繁&lt;br&gt;    3、自动化不需要人为干预太多。&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://duolaa.xyz/2016/07/16/hello-world/"/>
     <id>http://duolaa.xyz/2016/07/16/hello-world/</id>
@@ -137,6 +168,31 @@ Killing Xvnc4 process ID 5335
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Debian Q&amp;R</title>
+    <link href="http://duolaa.xyz/2016/06/19/Debian%20Q&R/"/>
+    <id>http://duolaa.xyz/2016/06/19/Debian Q&R/</id>
+    <published>2016-06-19T12:38:48.000Z</published>
+    <updated>2016-10-21T03:07:39.984Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Q：重新设置时区&quot;&gt;&lt;a href=&quot;#Q：重新设置时区&quot; class=&quot;headerlink&quot; title=&quot;Q：重新设置时区&quot;&gt;&lt;/a&gt;Q：重新设置时区&lt;/h2&gt;&lt;p&gt;user@debian:~$ timedatectl&lt;br&gt;user@debian:~$ timedatectl list-timezones&lt;br&gt;user@debian:~$ timedatectl set-timezones Asia/Shanghai&lt;br&gt;user@debian:~$ timedatectl&lt;/p&gt;
+&lt;h2 id=&quot;Q-安装ntopng&quot;&gt;&lt;a href=&quot;#Q-安装ntopng&quot; class=&quot;headerlink&quot; title=&quot;Q: 安装ntopng&quot;&gt;&lt;/a&gt;Q: 安装ntopng&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://packages.ntop.org/apt-stable/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://packages.ntop.org/apt-stable/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.pcquest.com/installing-ntopng-a-web-based-network-traffic-analysis-tool/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.pcquest.com/installing-ntopng-a-web-based-network-traffic-analysis-tool/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;updating…&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Q：重新设置时区&quot;&gt;&lt;a href=&quot;#Q：重新设置时区&quot; class=&quot;headerlink&quot; title=&quot;Q：重新设置时区&quot;&gt;&lt;/a&gt;Q：重新设置时区&lt;/h2&gt;&lt;p&gt;user@debian:~$ timedatectl&lt;br&gt;user@debian:~$ t
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://duolaa.xyz/categories/Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://duolaa.xyz/tags/Debian/"/>
     
   </entry>
   
@@ -251,10 +307,10 @@ PubkeyAuthentication yes# 启用公钥认证，默认为yes
     <link href="http://duolaa.xyz/2015/06/19/debian%20source.list/"/>
     <id>http://duolaa.xyz/2015/06/19/debian source.list/</id>
     <published>2015-06-19T02:38:48.000Z</published>
-    <updated>2016-10-12T03:20:18.350Z</updated>
+    <updated>2016-10-21T03:05:38.746Z</updated>
     
-    <content type="html">&lt;p&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
+    <content type="html">&lt;p&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h2&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i386&lt;/li&gt;
 &lt;li&gt;amd64&lt;/li&gt;
 &lt;li&gt;source&lt;/li&gt;
@@ -290,8 +346,8 @@ deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free con
     
     <summary type="html">
     
-      &lt;p&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/debian.html&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h1&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
+      &lt;p&gt;主要是做个备份，网易的源，&lt;a href=&quot;http://mirrors.163.com/.help/&quot;&gt;参考地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Debian镜像使用帮助&quot;&gt;&lt;a href=&quot;#Debian镜像使用帮助&quot; class=&quot;headerlink&quot; title=&quot;Debian镜像使用帮助&quot;&gt;&lt;/a&gt;Debian镜像使用帮助&lt;/h2&gt;&lt;h3 id=&quot;收录架构&quot;&gt;&lt;a href=&quot;#收录架构&quot; class=&quot;headerlink&quot; title=&quot;收录架构&quot;&gt;&lt;/a&gt;收录架构&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i386&lt;/li&gt;
 &lt;li&gt;amd64&lt;/li&gt;
 &lt;li&gt;source&lt;/li&gt;
